@@ -11,7 +11,7 @@ SFTP (Secure File Transfer Protocol) is a secure file transfer protocol that use
 
 * sftp username@hostname
 * provide password
-* cd /home/alx-system_engineering-devops/
+* cd /root/alx-system_engineering-devops/
 * mkdir command_line_for_the_win
 * mput cmdline/*  --------------[Note: cmdline is the directory where all my images were stored]
 * put README.md
