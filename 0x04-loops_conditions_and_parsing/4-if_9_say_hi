@@ -2,13 +2,13 @@
 # A Bash Script that uses a while loop with an if statement
 # It prints 'Hi' on the 9th line and 'Best School' of the rest of the 10 lines
 
-i=1
-while [ "$i" -le 10 ]
+i=0
+while [ "$i" -lt 10 ]
 do
     if [ "$i" -eq 9 ]
     then
         echo "Hi"
     fi
     echo "Best School"
-    i=$((i + 1))
+    (( i++ ))
 done
