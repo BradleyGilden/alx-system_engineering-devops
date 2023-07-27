@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Prints the number of occurences of IP and Status code
 
-awk '{ count[$1]++; info[$1]=$9 } END { for (item in count) { print item, info[item], count[item] } }' apache-access.log | sort -k3,3nr
+awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
