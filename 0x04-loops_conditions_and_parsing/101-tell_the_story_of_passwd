@@ -1,0 +1,20 @@
+#!/usr/bin/env bash 
+# a Bash script that displays the content of the file /etc/passwd,
+# using the while loop + IFS.
+# Format: The user USERNAME is part of the GROUP_ID gang,
+# lives in HOME_DIRECTORY and rides COMMAND/SHELL.
+# USER ID's place is protected by the passcode PASSWORD,
+# more info about the user here: USER ID INFO
+
+OLD_IFS=$IFS
+IFS=":"
+
+while read -r uname password uid gid info homedir shell
+do
+    echo "The user $uname is part of the $gid gang\
+, lives in $homedir and rides $shell\
+. $uid's place is protected by the passcode $password, \
+more info about the user here: $info"
+done < "/etc/passwd"
+
+IFS=$OLD_IFS
