@@ -1,2 +1,13 @@
-#!/usr/bin/env bash 
-# This is a comment
+#!/usr/bin/env bash
+# A Bash Script that uses a while loop with an if statement
+
+i=1
+while [ "$i" -le 10 ]
+do
+    if [ "$i" -ne 9 ]; then
+        echo "Best School"
+    else
+        echo "Hi"
+    fi
+    i=$((i + 1))
+done
