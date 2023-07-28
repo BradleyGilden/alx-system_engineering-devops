@@ -14,6 +14,10 @@ This directory deals with handling processes and signals in linux
 * [67-stop_me_if_you_can](67-stop_me_if_you_can) - Bash script attempts to stop 7-highlander similar to 6-stop_me_if_you_can
 * [7-highlander](7-highlander) - infinite loop that prevents exiting when SIGTERM in received
 * [8-beheaded_process](8-beheaded_process) - Bash script that kills 7-highlander
+* [100-process_and_pid_file](100-process_and_pid_file) - creates file when initiated, handles sigterm and sigint, file is deleted if sigterm or sigquit is received
+* [101-manage_my_process](101-manage_my_process) - manages *manage_my_process*
+* [manage_my_process](manage_my_process) - Indefinitely writes I am alive! to the file /tmp/my_process
+* [102-zombie.c](102-zombie.c) - a C program that creates 5 zombie processes
 
 ## Important Commands Used:
 
