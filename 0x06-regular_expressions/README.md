@@ -1,8 +1,12 @@
 # Regexp?
 
-This directory contains practice on Regex/Regexp concepts and advanced concepts
+This directory contains practice on Regex/Regexp concepts and advanced concepts. Regex patterns are tested using Ruby scripts and Ruby's Onigumura library
 
 ## Directory Files
+
+* [0-simply_match_school.rb](0-simply_match_school.rb) - The regular expression must match 'School'
+* [1-repetition_token_0.rb](1-repetition_token_0.rb) - Must match 'hb{letter}n' where letter must be 2-5 't' characters
+* [2-repetition_token_1.rb](2-repetition_token_1.rb) - match 'h{character}tn' where character must be 1 or no instances of 'b'
 
 ## Cheat Sheet
 
