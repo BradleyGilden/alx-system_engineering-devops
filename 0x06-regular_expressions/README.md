@@ -10,6 +10,7 @@ This directory contains practice on Regex/Regexp concepts and advanced concepts.
 * [3-repetition_token_2.rb](3-repetition_token_2.rb) - matches 'hbtn' where 't' can be one or more
 * [4-repetition_token_3.rb](4-repetition_token_3.rb) - # matches 'hbtn' where 't' can be have 0 or more occurences
 * [5-beginning_and_end.rb](5-beginning_and_end.rb) - # match 'h\*n' where '*' dontates anything can go inbetween 'h' and 'n'
+* [6-phone_number.rb](6-phone_number.rb) - # match a 10 digit phone number
 
 ## Cheat Sheet
 
