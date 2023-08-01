@@ -5,8 +5,10 @@ This directory contains practice on Regex/Regexp concepts and advanced concepts.
 ## Directory Files
 
 * [0-simply_match_school.rb](0-simply_match_school.rb) - The regular expression must match 'School'
-* [1-repetition_token_0.rb](1-repetition_token_0.rb) - Must match 'hb{letter}n' where letter must be 2-5 't' characters
+* [1-repetition_token_0.rb](1-repetition_token_0.rb) - match 'hb{letter}n' where letter must be 2-5 't' characters
 * [2-repetition_token_1.rb](2-repetition_token_1.rb) - match 'h{character}tn' where character must be 1 or no instances of 'b'
+* [3-repetition_token_2.rb](3-repetition_token_2.rb) - matches 'hbtn' where 't' can be one or more
+* [4-repetition_token_3.rb](4-repetition_token_3.rb) - # matches 'hbtn' where 't' can be have 0 or more occurences
 
 ## Cheat Sheet
 
