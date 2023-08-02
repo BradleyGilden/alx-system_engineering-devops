@@ -35,7 +35,7 @@ The transport layer takes data transferred in the session layer and breaks it in
 
 ### The Network Layer
 
-The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node. ex: ([IP](INTERNET.md), IPX, ICMP)
+The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses network addresses (typically Internet Protocol addresses) to route packets to a destination node. ex: ([IP](ADDRESSES.md), IPX, ICMP)
 
 ### The Data Link Layer
 
