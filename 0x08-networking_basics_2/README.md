@@ -7,6 +7,13 @@
 * What is the hosts file
 * Netcat examples
 
+## Commands Used:
+
+* ifconfig
+* telnet
+* nc
+* cut
+
 ## Directory Files
 
 * 0-change_your_home_IP
