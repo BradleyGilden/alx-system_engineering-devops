@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# generate ssh key pare usinga a remotedo
+ssh -i ~/.ssh/school ubuntu@54.237.31.51
