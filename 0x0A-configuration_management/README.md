@@ -19,6 +19,15 @@ simple manifests created using *Puppet*
   * File group is `www-data`
   * File contains `I love Puppet`
 
+* [1-install_a_package.pp](1-install_a_package.pp) -  install flask from pip3.
+  * Requirements:
+  * Install flask
+  * Version must be 2.1.0
+
+* [2-execute_a_command.pp](2-execute_a_command.pp) - create a manifest that kills a process named killmenow
+  * Must use `exec` Puppet resource
+  * Must use `pkill`
+
 ## Key Info
 
 * manifests are code files written to manage key nodes
