@@ -9,6 +9,16 @@ One of the most popular configuration management tools is *Puppet* and is
 commonly used to manage nodes in servers. This repository will contain
 simple manifests created using *Puppet*
 
+## Directory Files
+
+* [0-create_a_file.pp](0-create_a_file.pp): create a file in /tmp.
+  * Requirements:
+  * File path is `/tmp/school`
+  * File permission is` 0744`
+  * File owner is `www-data`
+  * File group is `www-data`
+  * File contains `I love Puppet`
+
 ## Key Info
 
 * manifests are code files written to manage key nodes
