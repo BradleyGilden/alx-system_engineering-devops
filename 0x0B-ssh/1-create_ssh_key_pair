@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# generate ssh key pare usinga a remotedo
+ssh-keygen -b 4096 -f ./school -P 'betty'
