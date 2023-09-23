@@ -1,4 +1,4 @@
-file { '/home/ubuntu/.ssh/config':  # Replace with the correct path
+file { '~/.ssh/config':  # Replace with the correct path
     ensure  => present,  # Make sure the file exists.
     content => @(END)
 User ubuntu
