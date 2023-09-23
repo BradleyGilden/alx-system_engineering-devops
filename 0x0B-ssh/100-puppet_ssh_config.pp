@@ -1,5 +1,5 @@
 file { '~/.ssh/config':  # Replace with the correct path
-    ensure  => present,  # Make sure the file exists.
+    ensure  => 'present',  # Make sure the file exists.
     content => @(END)
 User ubuntu
 IdentityFile ~/.ssh/school
