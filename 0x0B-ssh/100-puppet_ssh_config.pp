@@ -1,3 +1,4 @@
+# Turns off password authentication and uses private school key
 file_line { 'Turn off passwd auth':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
