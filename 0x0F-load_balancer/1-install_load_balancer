@@ -1,2 +1,19 @@
 #!/usr/bin/env bash
-# comment
+# installs and Configures HAproxy on ubuntu machine
+
+apt-get update
+apt-get -y install haproxy
+
+echo "
+frontend  bradley-frontend
+        bind *:80
+        mode http
+        default_backend bradley-backend
+backend bradley-backend
+        balance roundrobin
+        server web-01 54.237.31.51:80 check
+        server web-02 100.25.137.176:80 check" >> /etc/haproxy/haproxy.cfg
+
+echo "ENABLED=1" | tee -a /etc/default/haproxy
+
+service haproxy restart
