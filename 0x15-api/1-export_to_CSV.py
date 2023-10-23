@@ -9,9 +9,9 @@ Author: Bradley Dillion Gilden
 Date: 23-10-2023
 """
 
-import requests
 from sys import argv
 
+import requests
 
 if __name__ == '__main__':
     try:
