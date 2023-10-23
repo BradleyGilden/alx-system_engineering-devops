@@ -45,7 +45,9 @@ if __name__ == '__main__':
             f'https://jsonplaceholder.typicode.com/users/{argv[1]}')
         name = response.json()['name']
 
-        print(f'{name} is done with tasks({tasks_complete}/{tasks_tot})')
+        print(
+            f'Employee {name} is done with tasks({tasks_complete}/{tasks_tot})'
+            )
         for title in titles:
             print(f'\t{title}')
 
