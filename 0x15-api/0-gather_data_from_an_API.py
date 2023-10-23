@@ -16,9 +16,8 @@ Author: Bradley Dillion Gilden
 Date: 23-10-2023
 """
 
-from sys import argv
-
 import requests
+from sys import argv
 
 if __name__ == '__main__':
     try:
