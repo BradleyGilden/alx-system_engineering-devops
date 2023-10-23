@@ -15,33 +15,27 @@ import json
 import requests
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
-        statuses = []
-        titles = []
+        url = "https://jsonplaceholder.typicode.com/todos?userId={}"
 
-        # get all employee tasks
-        response = requests.get('https://jsonplaceholder.typicode.com/todos')
-
-        todo_list = response.json()
-
-        for task in todo_list:
-            statuses.append(task['completed'])
-            titles.append(task['title'])
-
-        # we now need to query user resource to get the usernames
-        response = requests.get('https://jsonplaceholder.typicode.com/users')
+        response = requests.get("https://jsonplaceholder.typicode.com/users")
         users = response.json()
-        userlen = len(users)
-        # repeats the username and id in a list
 
-        # list comprehension containing dicts all inside a dict comprehension
-        json_obj = {str(uid): [{'task': title, 'completed': status,
-                                'username': users[uid - 1]['username']}
-                               for title, status in zip(titles, statuses)]
-                    for uid in range(1, userlen + 1)}
+        # dict comprehends users while list comprehending responses
+        json_obj = {
+            str(u["id"]): [
+                {
+                    "username": u["username"],
+                    "task": task["title"],
+                    "completed": task["completed"],
+                }
+                for task in requests.get(url.format(u["id"])).json()
+            ]
+            for u in users
+        }
 
-        with open('todo_all_employees.json', 'w') as file:
+        with open("todo_all_employees.json", "w") as file:
             json.dump(json_obj, file)
 
     except Exception:
