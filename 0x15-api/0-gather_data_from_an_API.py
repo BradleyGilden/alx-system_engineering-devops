@@ -48,7 +48,7 @@ if __name__ == '__main__':
         print(
             f'Employee {name} is done with tasks({complete}/{tasks_tot}):')
         for title in titles:
-            print(f'\t{title}')
+            print(f'\t {title}')
 
     except Exception:
         pass
