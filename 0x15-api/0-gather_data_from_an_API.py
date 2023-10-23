@@ -22,7 +22,7 @@ from sys import argv
 
 if __name__ == '__main__':
     try:
-        tasks_complete = 0
+        complete = 0
         tasks_tot = 0
         titles = []
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         for task in todo_list:
             if task['completed'] is True:
                 titles.append(task['title'])
-                tasks_complete += 1
+                complete += 1
             tasks_tot += 1
 
         # we now need to query user resource to get the users name
@@ -46,8 +46,7 @@ if __name__ == '__main__':
         name = response.json()['name']
 
         print(
-            f'Employee {name} is done with tasks({tasks_complete}/{tasks_tot})'
-            )
+            f'Employee {name} is done with tasks({complete}/{tasks_tot}):')
         for title in titles:
             print(f'\t{title}')
 
