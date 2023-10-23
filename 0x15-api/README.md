@@ -12,7 +12,7 @@ pip3 install requests
 * [0-gather_data_from_an_API.py](0-gather_data_from_an_API.py) - Writing a Python script that, using this [REST API](https://jsonplaceholder.typicode.com/), for a given employee ID, returns information about his/her TODO list progress.
 * [1-export_to_CSV.py](1-export_to_CSV.py) - Using *0-\*.py*, extend the Python script to export data in the CSV format.
 * [2-export_to_JSON.py](2-export_to_JSON.py) - extend your Python script to export data in the JSON format.
-* [3-dictionary_of_list_of_dictionaries.py](3-dictionary_of_list_of_dictionaries.py) - 
+* [3-dictionary_of_list_of_dictionaries.py](3-dictionary_of_list_of_dictionaries.py) - extend your Python script to export data in the JSON format of ALL employees.
 
 ## What is an API?
 
