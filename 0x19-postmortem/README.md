@@ -1,6 +1,6 @@
-# POSTMORTEM
+<h1 align="center">POSTMORTEM</h1>
 
-<p align="center"></p><img src="./imgs/debug.png" width="500">
+<p align="center"><img src="./imgs/debug.png" width="500"></p>
 
 Software postmortems, also known as "post-incident reviews" or "retrospectives," are an essential practice in software development and operations to learn from past failures, incidents, or even successful projects. These reviews help teams identify what went wrong, what went well, and how they can improve their processes for the future
 
